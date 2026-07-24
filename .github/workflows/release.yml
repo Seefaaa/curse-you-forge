@@ -1,0 +1,43 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install --break-system-packages pyinstaller asar
+
+      - name: Build executable
+        run: pyinstaller --onefile --console --name curse-patcher main.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: curse-patcher
+          path: dist/curse-patcher.exe
+
+      - name: Create release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v3
+        with:
+          files: dist/curse-patcher.exe
+          generate_release_notes: true
