@@ -12,7 +12,7 @@ You have two options:
 *The executeable is just a Python binary with this script embeded.*
 
 > [!NOTE]  
-> *Needs to be done after every CurseForge update.*
+> Needs to be done after every CurseForge update.
 
 > [!CAUTION]
 > Works on Windows only!
