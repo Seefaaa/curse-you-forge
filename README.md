@@ -7,7 +7,7 @@ Hides ad elements in the CurseForge desktop app by simply patching its CSS code.
 You have two options:
 
 - Get the script [here](https://github.com/Seefaaa/curse-you-forge/blob/master/main.py) and run it with Python 3.14 or higher.
-- Download the executeable from [here](https://github.com/Seefaaa/curse-you-forge/releases/tag/latest) and simply run it.
+- Download the [executeable](https://github.com/Seefaaa/curse-you-forge/releases/latest/download/curse-patcher.exe) from [here](https://github.com/Seefaaa/curse-you-forge/releases/latest) and simply run it.
 
 *The executeable is just a Python binary with this script embeded.*
 
