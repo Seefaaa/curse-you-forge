@@ -43,3 +43,6 @@ If you are a Loonix user reading this, I would be glad if you work out Loonix eq
 # Citations
 
 See [this blog post](https://noh.am/en/posts/unpacking-and-repacking-electron-apps/), which showed me how simple unpacking and repacking an electron app is.
+
+<br>
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/a6fbcd12-458c-4e5a-b9d0-5b4d39d8dfd0" />
